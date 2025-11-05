@@ -27,7 +27,7 @@ const ReactIcon = () => (
     className="skills__icon"
   >
     <circle cx="0" cy="0" r="2" fill="currentColor"></circle>
-    <g stroke="currentColor" stroke-width="1" fill="none">
+    <g stroke="currentColor" strokeWidth="1" fill="none">
       <ellipse rx="10" ry="4.5"></ellipse>
       <ellipse rx="10" ry="4.5" transform="rotate(60)"></ellipse>
       <ellipse rx="10" ry="4.5" transform="rotate(120)"></ellipse>
@@ -50,8 +50,8 @@ const NodeJSIcon = () => (
         y1="7.07831"
         y2="16.92169"
       >
-        <stop offset="0" stop-color="#fff" stop-opacity="0.2" />
-        <stop offset="1" stop-color="#fff" stop-opacity="0" />
+        <stop offset="0" stopColor="#fff" stopOpacity="0.2" />
+        <stop offset="1" stopColor="#fff" stopOpacity="0" />
       </linearGradient>
     </defs>
     <title />
