@@ -1,5 +1,7 @@
 "use client";
 
+import { useLanguage } from "./LanguageProvider";
+
 const NuxtIcon = () => (
   <svg
     role="img"
@@ -65,54 +67,108 @@ const PHPIcon = () => (
   </svg>
 );
 
-const skills = [
-  {
-    name: "Frontend engineering",
-    description:
-      "Component-driven builds with accessibility-first TypeScript and best-in-class performance budgets.",
-    tools: ["React", "Next.js", "TypeScript", "Vite", "Tailwind"],
-    icon: <ReactIcon />,
+const SKILL_ICONS = {
+  frontend: <ReactIcon />,
+  creative: <NuxtIcon />,
+  backend: <NodeJSIcon />,
+  platforms: <PHPIcon />,
+};
+
+const SKILL_CONTENT = {
+  en: {
+    eyebrow: "/ My toolkit",
+    title: "A hybrid of engineering and creative code",
+    lead:
+      "From design systems to realtime canvases, here is what I lean on to ship polished, performant work.",
+    label: "Core stack",
+    items: [
+      {
+        key: "frontend",
+        name: "Frontend engineering",
+        description:
+          "Component-driven builds with accessibility-first TypeScript and best-in-class performance budgets.",
+        tools: ["React", "Next.js", "TypeScript", "Vite", "Tailwind"],
+      },
+      {
+        key: "creative",
+        name: "Creative web & WebGL",
+        description:
+          "Story-driven landing pages and immersive product demos powered by Three.js, shaders, and motion design.",
+        tools: ["Three.js", "GSAP", "Nuxt 3", "Lenis", "WebGL"],
+      },
+      {
+        key: "backend",
+        name: "Backend & APIs",
+        description:
+          "Building resilient Go, Laravel, and Node services with serverless integrations, observability, and bulletproof data flows.",
+        tools: ["Go", "Laravel", "Node.js", "Supabase", "GraphQL"],
+      },
+      {
+        key: "platforms",
+        name: "Platforms & CMS",
+        description:
+          "Empowering content teams with flexible headless workflows, automations, and legacy support.",
+        tools: ["Contentful", "Sanity", "Shopify", "WordPress", "PHP"],
+      },
+    ],
   },
-  {
-    name: "Creative web & WebGL",
-    description:
-      "Story-driven landing pages and immersive product demos powered by Three.js, shaders, and motion design.",
-    tools: ["Three.js", "GSAP", "Nuxt 3", "Lenis", "WebGL"],
-    icon: <NuxtIcon />,
+  vi: {
+    eyebrow: "/ Công cụ",
+    title: "Sự kết hợp giữa kỹ thuật và sáng tạo",
+    lead:
+      "Từ hệ thống thiết kế đến trải nghiệm realtime, đây là bộ công cụ tôi sử dụng để xây dựng sản phẩm tinh gọn và hiệu năng.",
+    label: "Ngăn xếp chính",
+    items: [
+      {
+        key: "frontend",
+        name: "Kỹ sư Frontend",
+        description:
+          "Phát triển dựa trên component với TypeScript ưu tiên truy cập và ngân sách hiệu năng chặt chẽ.",
+        tools: ["React", "Next.js", "TypeScript", "Vite", "Tailwind"],
+      },
+      {
+        key: "creative",
+        name: "Web sáng tạo & WebGL",
+        description:
+          "Landing page kể chuyện và demo sản phẩm sống động nhờ Three.js, shader và motion tinh tế.",
+        tools: ["Three.js", "GSAP", "Nuxt 3", "Lenis", "WebGL"],
+      },
+      {
+        key: "backend",
+        name: "Backend & API",
+        description:
+          "Xây dựng dịch vụ Go, Laravel, Node vững chắc với serverless, giám sát và luồng dữ liệu an toàn.",
+        tools: ["Go", "Laravel", "Node.js", "Supabase", "GraphQL"],
+      },
+      {
+        key: "platforms",
+        name: "Nền tảng & CMS",
+        description:
+          "Trao quyền cho đội nội dung bằng workflow headless linh hoạt, tự động và hỗ trợ legacy.",
+        tools: ["Contentful", "Sanity", "Shopify", "WordPress", "PHP"],
+      },
+    ],
   },
-  {
-    name: "Backend & APIs",
-    description:
-      "Building resilient Node-based services, serverless functions, and GraphQL/REST integrations.",
-    tools: ["Node.js", "Express", "Supabase", "GraphQL", "AWS"],
-    icon: <NodeJSIcon />,
-  },
-  {
-    name: "Platforms & CMS",
-    description:
-      "Empowering content teams with flexible headless workflows, automations, and legacy support.",
-    tools: ["Contentful", "Sanity", "Shopify", "WordPress", "PHP"],
-    icon: <PHPIcon />,
-  },
-];
+} as const;
 
 export default function Skills() {
+  const { language } = useLanguage();
+  const copy = SKILL_CONTENT[language];
+
   return (
     <section id="skills" className="skills section">
       <div className="section__heading">
-        <span className="section__eyebrow">/ My toolkit</span>
-        <h2 className="section__title">A hybrid of engineering and creative code</h2>
-        <p className="section__lead">
-          From design systems to realtime canvases, here is what I lean on to ship polished, performant work.
-        </p>
+        <span className="section__eyebrow">{copy.eyebrow}</span>
+        <h2 className="section__title">{copy.title}</h2>
+        <p className="section__lead">{copy.lead}</p>
       </div>
 
       <div className="skills__grid grid grid--two">
-        {skills.map((skill) => (
+        {copy.items.map((skill) => (
           <article key={skill.name} className="skills__card glass-panel glass-panel--tight">
             <div className="skills__card-top">
-              <div className="skills__icon-wrapper">{skill.icon}</div>
-              <span className="skills__label">Core stack</span>
+              <div className="skills__icon-wrapper">{SKILL_ICONS[skill.key as keyof typeof SKILL_ICONS]}</div>
+              <span className="skills__label">{copy.label}</span>
             </div>
             <h3 className="skills__title">{skill.name}</h3>
             <p className="skills__description">{skill.description}</p>
