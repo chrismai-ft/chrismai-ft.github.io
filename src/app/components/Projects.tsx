@@ -64,7 +64,7 @@ const PROJECT_ITEMS = [
 const PROJECTS_COPY = {
   en: {
     eyebrow: "/ Selected work",
-    title: "Partnerships that blend craft and conversion",
+    title: "Collaborations that blend craft and conversion",
     lead:
       "A mix of launches that combine experimentation, measurable outcomes, and memorable storytelling. Tap into the case studies below or reach out for the private reel.",
     caseLabel: "Case study",
@@ -72,7 +72,7 @@ const PROJECTS_COPY = {
   },
   vi: {
     eyebrow: "/ Dự án tiêu biểu",
-    title: "Những hợp tác kết hợp giữa trải nghiệm và hiệu quả",
+    title: "Những cộng tác kết hợp giữa trải nghiệm và hiệu quả",
     lead:
       "Chuỗi sản phẩm cân bằng thử nghiệm, số liệu rõ ràng và storytelling đáng nhớ. Xem các case study bên dưới hoặc liên hệ để nhận reel riêng tư.",
     caseLabel: "Case study",

@@ -5,18 +5,18 @@ import { useLanguage } from "./LanguageProvider";
 const socials = [
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/company/kouma-studio",
-    handle: "kouma-studio",
+    href: "https://www.linkedin.com/in/chrismai-ft",
+    handle: "@chrismai-ft",
   },
   {
-    label: "Dribbble",
-    href: "https://dribbble.com/kouma",
-    handle: "@kouma",
+    label: "Twitter",
+    href: "https://x.com/chrismai_tf",
+    handle: "@chrismai_tf",
   },
   {
     label: "GitHub",
-    href: "https://github.com/koumastudio",
-    handle: "github.com/koumastudio",
+    href: "https://github.com/chrismai-ft",
+    handle: "@chrismai-ft",
   },
 ];
 
@@ -90,7 +90,7 @@ export default function Contact() {
                 {copy.primaryCta}
               </a>
               <a
-                href="mailto:hello@koumastudio.com"
+                href="mailto:chrismai.ft@gmail.com"
                 className="button button--ghost"
               >
                 {copy.secondaryCta}

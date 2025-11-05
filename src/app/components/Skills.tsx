@@ -5,65 +5,85 @@ import { useLanguage } from "./LanguageProvider";
 const NuxtIcon = () => (
   <svg
     role="img"
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
     className="skills__icon"
+    viewBox="0 0 512 512"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      fill="currentColor"
-      d="M11.996 1.625l-9.37 16.232h18.74zM4.12 18.293L12 3.8l7.88 14.493H4.12zm13.13-1.493l-5.25-9.094l-5.25 9.094h10.5z"
+      d="M281.44 397.667H438.32C443.326 397.667 448.118 395.908 452.453 393.427C456.789 390.946 461.258 387.831 463.76 383.533C466.262 379.236 468.002 374.36 468 369.399C467.998 364.437 466.266 359.563 463.76 355.268L357.76 172.947C355.258 168.65 352.201 165.534 347.867 163.053C343.532 160.573 337.325 158.813 332.32 158.813C327.315 158.813 322.521 160.573 318.187 163.053C313.852 165.534 310.795 168.65 308.293 172.947L281.44 219.587L227.733 129.13C225.229 124.834 222.176 120.307 217.84 117.827C213.504 115.346 208.713 115 203.707 115C198.701 115 193.909 115.346 189.573 117.827C185.238 120.307 180.771 124.834 178.267 129.13L46.8267 355.268C44.3208 359.563 44.0022 364.437 44 369.399C43.9978 374.36 44.3246 379.235 46.8267 383.533C49.3288 387.83 53.7979 390.946 58.1333 393.427C62.4688 395.908 67.2603 397.667 72.2667 397.667H171.2C210.401 397.667 238.934 380.082 258.827 346.787L306.88 263.4L332.32 219.587L410.053 352.44H306.88L281.44 397.667ZM169.787 352.44H100.533L203.707 174.36L256 263.4L221.361 323.784C208.151 345.387 193.089 352.44 169.787 352.44Z"
+      fill="#00DC82"
     />
   </svg>
 );
 
 const ReactIcon = () => (
   <svg
-    role="img"
-    viewBox="0 0 24 24"
+    width="100%"
+    height="100%"
+    viewBox="-10.5 -9.45 21 18.9"
+    fill="none"
     xmlns="http://www.w3.org/2000/svg"
     className="skills__icon"
   >
-    <path
-      fill="currentColor"
-      d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999s4.477 9.999 9.999 9.999s9.999-4.477 9.999-9.999s-4.477-9.999-9.999-9.999zm0 18.24a8.241 8.241 0 1 1 0-16.482a8.241 8.241 0 0 1 0 16.482z"
-    />
-    <path fill="currentColor" d="M12.001 8.9a3.1 3.1 0 1 0 0 6.2a3.1 3.1 0 0 0 0-6.2z" />
-    <path
-      fill="currentColor"
-      d="m16.035 17.513l-1.88-1.085a8.203 8.203 0 0 1-4.306 0l-1.88 1.085a10.005 10.005 0 0 0 8.066 0zM7.965 6.487l1.88 1.085a8.203 8.203 0 0 1 4.306 0l1.88-1.085a10.005 10.005 0 0 0-8.066 0z"
-    />
-    <path
-      fill="currentColor"
-      d="M19.394 13.917a10.04 10.04 0 0 0 0-3.834l1.63-1.026a11.95 11.95 0 0 1 0 5.886l-1.63-1.026zm-14.788 0l-1.63 1.026a11.95 11.95 0 0 1 0-5.886l1.63 1.026a10.04 10.04 0 0 0 0 3.834z"
-    />
+    <circle cx="0" cy="0" r="2" fill="currentColor"></circle>
+    <g stroke="currentColor" stroke-width="1" fill="none">
+      <ellipse rx="10" ry="4.5"></ellipse>
+      <ellipse rx="10" ry="4.5" transform="rotate(60)"></ellipse>
+      <ellipse rx="10" ry="4.5" transform="rotate(120)"></ellipse>
+    </g>
   </svg>
 );
 
 const NodeJSIcon = () => (
   <svg
-    role="img"
-    viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
     className="skills__icon"
+    viewBox="0 0 24 24"
   >
+    <defs>
+      <linearGradient
+        gradientUnits="userSpaceOnUse"
+        id="a"
+        x1="1.44541"
+        x2="22.55459"
+        y1="7.07831"
+        y2="16.92169"
+      >
+        <stop offset="0" stop-color="#fff" stop-opacity="0.2" />
+        <stop offset="1" stop-color="#fff" stop-opacity="0" />
+      </linearGradient>
+    </defs>
+    <title />
     <path
-      fill="currentColor"
-      d="M12.001 0 C9.37 0 5.925 1.025 5.925 5.056 l 0 11.031 C 5.925 19.975 9.37 21.088 12.001 21.088 c 2.63 0 6.075-1.113 6.075-5.001 V 5.056 C 18.076 1.025 14.63 0 12.001 0 Z M 12.001 1.088 c 2.063 0 4.988 0.7 4.988 3.969 V 16.03 c 0 3.269-2.925 4.056-4.988 4.056 c-2.063 0-4.988-0.788-4.988-4.056 V 5.056 c 0-3.269 2.925-3.969 4.988-3.969 Z m -2.25 10.7 l -0.262 1.481 c -0.163 0.9 -0.925 1.581-1.838 1.581 c -1.025 0-1.85-0.825-1.85-1.85 c 0-1.025 0.825-1.85 1.85-1.85 c 0.531 0 1.006 0.225 1.35 0.587 l 0.237-1.331 c -0.463-0.237-0.963-0.375-1.5-0.375 c -1.9 0-3.431 1.531-3.431 3.431 c 0 1.9 1.531 3.431 3.431 3.431 c 1.8 0 3.269-1.4 3.375-3.131 l 0.337-1.925 L 9.751 11.788 Z M 16.513 13.919 l -1.187 2.063 c -0.3 0.525-0.85 0.838-1.45 0.838 c -0.95 0-1.725-0.775-1.725-1.725 s 0.775-1.725 1.725-1.725 c 0.488 0 0.938 0.2 1.275 0.525 L 15.35 12.5 c -0.45-0.337-1.013-0.537-1.637-0.537 c -1.825 0-3.313 1.488-3.313 3.313 c 0 1.825 1.488 3.313 3.313 3.313 c 1.637 0 3.012-1.2 3.25-2.763 l 1.425-2.462 l -1.538-0.907 Z"
+      d="M12,24a.49971.49971,0,0,1-.25049-.06738l-3.0166-1.7461a.4999.4999,0,0,1,.501-.86523L12,22.92188l9-5.21V6.28809l-9-5.21-9,5.21V17.71191l.81006.46875A4.63054,4.63054,0,0,0,6.5,19c.4917,0,1,0,1-2V7.5a.5.5,0,0,1,1,0V17c0,1.55859-.24219,3-2,3a5.67958,5.67958,0,0,1-3.19971-.959l-1.05078-.6084A.49912.49912,0,0,1,2,18V6a.49912.49912,0,0,1,.24951-.43262l9.5-5.5a.4993.4993,0,0,1,.501,0l9.5,5.5A.49912.49912,0,0,1,22,6V18a.49912.49912,0,0,1-.24951.43262l-9.5,5.5A.49971.49971,0,0,1,12,24Z"
+      fill="#388e3c"
+    />
+    <path
+      d="M14,17c-2.20557,0-4-1.3457-4-3a.5.5,0,0,1,1,0c0,1.084,1.374,2,3,2s3-.916,3-2c0-.71-1.23193-1.5-3-1.5-2.24316,0-4-1.09766-4-2.5,0-1.6543,1.79443-3,4-3s4,1.3457,4,3a.5.5,0,0,1-1,0c0-1.084-1.374-2-3-2s-3,.916-3,2c0,.71,1.23193,1.5,3,1.5,2.24316,0,4,1.09766,4,2.5C18,15.6543,16.20557,17,14,17Z"
+      fill="#388e3c"
+    />
+    <path
+      d="M12,24a.49971.49971,0,0,1-.25049-.06738l-3.0166-1.7461a.4999.4999,0,0,1,.501-.86523L12,22.92188l9-5.21V6.28809l-9-5.21-9,5.21V17.71191l.81006.46875A4.63054,4.63054,0,0,0,6.5,19c.4917,0,1,0,1-2V7.5a.5.5,0,0,1,1,0V17c0,1.55859-.24219,3-2,3a5.67958,5.67958,0,0,1-3.19971-.959l-1.05078-.6084A.49912.49912,0,0,1,2,18V6a.49912.49912,0,0,1,.24951-.43262l9.5-5.5a.4993.4993,0,0,1,.501,0l9.5,5.5A.49912.49912,0,0,1,22,6V18a.49912.49912,0,0,1-.24951.43262l-9.5,5.5A.49971.49971,0,0,1,12,24Z"
+      fill="url(#a)"
+    />
+    <path
+      d="M14,17c-2.20557,0-4-1.3457-4-3a.5.5,0,0,1,1,0c0,1.084,1.374,2,3,2s3-.916,3-2c0-.71-1.23193-1.5-3-1.5-2.24316,0-4-1.09766-4-2.5,0-1.6543,1.79443-3,4-3s4,1.3457,4,3a.5.5,0,0,1-1,0c0-1.084-1.374-2-3-2s-3,.916-3,2c0,.71,1.23193,1.5,3,1.5,2.24316,0,4,1.09766,4,2.5C18,15.6543,16.20557,17,14,17Z"
+      fill="url(#a)"
     />
   </svg>
 );
 
 const PHPIcon = () => (
   <svg
-    role="img"
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
     className="skills__icon"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 -1 100 50"
+    fill="#ffffff"
   >
-    <path
-      fill="currentColor"
-      d="M12 1.86a10.12 10.12 0 0 0-9.84 10.14a10.12 10.12 0 0 0 10.14 9.84a10.12 10.12 0 0 0 9.84-10.14A10.12 10.12 0 0 0 12 1.86zm-.43 4.1h2.7v2.3h-2.7zm2.7 4.17h2.7v2.3h-2.7zm-4.31-2.03l2.58-.02h.02c.98 0 1.55.57 1.47 1.5l-.26 3.12c-.08.97-.69 1.5-1.67 1.5l-2.12.02zm-3.04 1.93l2.58-.02h.02c.98 0 1.55.57 1.47 1.5l-.26 3.12c-.08.97-.69 1.5-1.67 1.5l-2.12.02z"
-    />
+    <path d="m7.579 10.123 14.204 0c4.169 0.035 7.19 1.237 9.063 3.604 1.873 2.367 2.491 5.6 1.855 9.699-0.247 1.873-0.795 3.71-1.643 5.512-0.813 1.802-1.943 3.427-3.392 4.876-1.767 1.837-3.657 3.003-5.671 3.498-2.014 0.495-4.099 0.742-6.254 0.742l-6.36 0-2.014 10.07-7.367 0 7.579-38.001 0 0m6.201 6.042-3.18 15.9c0.212 0.035 0.424 0.053 0.636 0.053 0.247 0 0.495 0 0.742 0 3.392 0.035 6.219-0.3 8.48-1.007 2.261-0.742 3.781-3.321 4.558-7.738 0.636-3.71 0-5.848-1.908-6.413-1.873-0.565-4.222-0.83-7.049-0.795-0.424 0.035-0.83 0.053-1.219 0.053-0.353 0-0.724 0-1.113 0l0.053-0.053" />
+    <path d="m41.093 0 7.314 0-2.067 10.123 6.572 0c3.604 0.071 6.289 0.813 8.056 2.226 1.802 1.413 2.332 4.099 1.59 8.056l-3.551 17.649-7.42 0 3.392-16.854c0.353-1.767 0.247-3.021-0.318-3.763-0.565-0.742-1.784-1.113-3.657-1.113l-5.883-0.053-4.346 21.783-7.314 0 7.632-38.054 0 0" />
+    <path d="m70.412 10.123 14.204 0c4.169 0.035 7.19 1.237 9.063 3.604 1.873 2.367 2.491 5.6 1.855 9.699-0.247 1.873-0.795 3.71-1.643 5.512-0.813 1.802-1.943 3.427-3.392 4.876-1.767 1.837-3.657 3.003-5.671 3.498-2.014 0.495-4.099 0.742-6.254 0.742l-6.36 0-2.014 10.07-7.367 0 7.579-38.001 0 0m6.201 6.042-3.18 15.9c0.212 0.035 0.424 0.053 0.636 0.053 0.247 0 0.495 0 0.742 0 3.392 0.035 6.219-0.3 8.48-1.007 2.261-0.742 3.781-3.321 4.558-7.738 0.636-3.71 0-5.848-1.908-6.413-1.873-0.565-4.222-0.83-7.049-0.795-0.424 0.035-0.83 0.053-1.219 0.053-0.353 0-0.724 0-1.113 0l0.053-0.053" />
   </svg>
 );
 
@@ -78,45 +98,43 @@ const SKILL_CONTENT = {
   en: {
     eyebrow: "/ My toolkit",
     title: "A hybrid of engineering and creative code",
-    lead:
-      "From design systems to realtime canvases, here is what I lean on to ship polished, performant work.",
+    lead: "From design systems to realtime canvases, here is what I lean on to ship polished, performant work.",
     label: "Core stack",
     items: [
       {
         key: "frontend",
-        name: "Frontend engineering",
+        name: "Frontend Engineering",
         description:
-          "Component-driven builds with accessibility-first TypeScript and best-in-class performance budgets.",
+          "Crafting component-driven interfaces with accessibility-first TypeScript and meticulous performance budgets.",
         tools: ["React", "Next.js", "TypeScript", "Vite", "Tailwind"],
       },
       {
         key: "creative",
-        name: "Creative web & WebGL",
+        name: "Creative Web & WebGL",
         description:
-          "Story-driven landing pages and immersive product demos powered by Three.js, shaders, and motion design.",
+          "Designing story-driven landing pages and immersive product demos with Three.js, shaders, and expressive motion design.",
         tools: ["Three.js", "GSAP", "Nuxt 3", "Lenis", "WebGL"],
       },
       {
         key: "backend",
         name: "Backend & APIs",
         description:
-          "Building resilient Go, Laravel, and Node services with serverless integrations, observability, and bulletproof data flows.",
-        tools: ["Go", "Laravel", "Node.js", "Supabase", "GraphQL"],
+          "Developing resilient Go, Laravel, and Node services with serverless architecture, observability, and secure data pipelines.",
+        tools: ["Go", "Laravel", "Node.js", "PostgreSQL", "MySQL", "Supabase"],
       },
       {
         key: "platforms",
         name: "Platforms & CMS",
         description:
-          "Empowering content teams with flexible headless workflows, automations, and legacy support.",
-        tools: ["Contentful", "Sanity", "Shopify", "WordPress", "PHP"],
+          "Building custom headless platforms that automate content workflows, integrate legacy systems, and scale effortlessly.",
+        tools: ["Laravel", "Nuxt 3", "MySQL", "Redis", "REST API"],
       },
     ],
   },
   vi: {
     eyebrow: "/ Công cụ",
     title: "Sự kết hợp giữa kỹ thuật và sáng tạo",
-    lead:
-      "Từ hệ thống thiết kế đến trải nghiệm realtime, đây là bộ công cụ tôi sử dụng để xây dựng sản phẩm tinh gọn và hiệu năng.",
+    lead: "Từ hệ thống thiết kế đến trải nghiệm realtime, đây là bộ công cụ tôi sử dụng để xây dựng sản phẩm tinh gọn và hiệu năng.",
     label: "Ngăn xếp chính",
     items: [
       {
@@ -138,14 +156,14 @@ const SKILL_CONTENT = {
         name: "Backend & API",
         description:
           "Xây dựng dịch vụ Go, Laravel, Node vững chắc với serverless, giám sát và luồng dữ liệu an toàn.",
-        tools: ["Go", "Laravel", "Node.js", "Supabase", "GraphQL"],
+        tools: ["Go", "Laravel", "Node.js", "PostgreSQL", "MySQL", "Supabase"],
       },
       {
         key: "platforms",
         name: "Nền tảng & CMS",
         description:
-          "Trao quyền cho đội nội dung bằng workflow headless linh hoạt, tự động và hỗ trợ legacy.",
-        tools: ["Contentful", "Sanity", "Shopify", "WordPress", "PHP"],
+          "Trao quyền cho quy trình nội dung bằng workflow headless linh hoạt, tự động và hỗ trợ legacy.",
+        tools: ["Laravel", "Nuxt 3", "MySQL", "Redis", "REST API"],
       },
     ],
   },
@@ -165,9 +183,14 @@ export default function Skills() {
 
       <div className="skills__grid grid grid--two">
         {copy.items.map((skill) => (
-          <article key={skill.name} className="skills__card glass-panel glass-panel--tight">
+          <article
+            key={skill.name}
+            className="skills__card glass-panel glass-panel--tight"
+          >
             <div className="skills__card-top">
-              <div className="skills__icon-wrapper">{SKILL_ICONS[skill.key as keyof typeof SKILL_ICONS]}</div>
+              <div className="skills__icon-wrapper">
+                {SKILL_ICONS[skill.key as keyof typeof SKILL_ICONS]}
+              </div>
               <span className="skills__label">{copy.label}</span>
             </div>
             <h3 className="skills__title">{skill.name}</h3>

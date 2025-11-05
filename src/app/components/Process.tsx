@@ -5,59 +5,81 @@ import { useLanguage } from "./LanguageProvider";
 const PROCESS_CONTENT = {
   en: {
     eyebrow: "/ Process",
-    title: "A partnership cadence built around momentum",
-    lead:
-      "Clear rhythms, thoughtful prototypes, and transparent collaboration keep teams aligned while we craft immersive experiences that feel effortless.",
+    title: "A solo process built around momentum",
+    lead: "Clear rhythms, thoughtful prototypes, and transparent communication keep collaborators aligned while I craft immersive experiences that feel effortless.",
     steps: [
       {
-        title: "Discover & align",
-        subtitle: "Unearth the signal",
+        title: "Discover & Align",
+        subtitle: "Find the clarity",
         description:
-          "We kick off with rapid discovery workshops to map objectives, audiences, and success metrics. Research insights are distilled into a shared creative brief.",
-        highlights: ["Product & brand audit", "Experience mapping", "Success measures"],
+          "Every project starts with focused discovery sessions to define goals, audiences, and measurable outcomes. Insights turn into a shared creative direction everyone aligns on.",
+        highlights: [
+          "Product & brand audit",
+          "Experience mapping",
+          "Success metrics",
+        ],
       },
       {
-        title: "Design the narrative",
-        subtitle: "Prototype the feel",
+        title: "Design the Narrative",
+        subtitle: "Shape the experience",
         description:
-          "Low-friction prototypes explore motion, pacing, and tone. Collaboratively we lock the story beats, art direction, and technical approach before production.",
-        highlights: ["Moodboards & tone boards", "Interactive prototypes", "Motion language"],
+          "Through rapid prototyping, we explore motion, flow, and tone to bring ideas to life. Together, we refine the story beats, art direction, and technical plan before production.",
+        highlights: [
+          "Moodboards & style frames",
+          "Interactive prototypes",
+          "Motion systems",
+        ],
       },
       {
-        title: "Build & iterate",
-        subtitle: "Ship with confidence",
+        title: "Build & Iterate",
+        subtitle: "Launch with confidence",
         description:
-          "High fidelity builds layer WebGL, responsive layout, and performance guardrails. We iterate with async reviews until the experience is production-ready.",
-        highlights: ["Component-driven builds", "Performance dashboards", "Tested handoff"],
+          "I craft high-fidelity builds combining WebGL, responsive layouts, and performance best practices. Feedback loops and async reviews ensure the final experience is polished and production-ready.",
+        highlights: [
+          "Component-driven builds",
+          "Performance tracking",
+          "Seamless handoff",
+        ],
       },
     ],
   },
   vi: {
     eyebrow: "/ Quy trình",
-    title: "Nhịp hợp tác được thiết kế để giữ đà tiến",
-    lead:
-      "Nhịp làm việc rõ ràng, prototype kỹ lưỡng và sự minh bạch giúp cả đội đồng điệu trong suốt quá trình tạo nên trải nghiệm sống động.",
+    title: "Nhịp làm việc cá nhân được thiết kế để giữ đà tiến",
+    lead: "Nhịp làm việc rõ ràng, prototype kỹ lưỡng và sự minh bạch giúp từng cộng tác đồng điệu trong suốt quá trình tạo nên trải nghiệm sống động.",
     steps: [
       {
-        title: "Khám phá & thống nhất",
-        subtitle: "Tìm đúng tín hiệu",
+        title: "Khám phá & Đồng bộ",
+        subtitle: "Tìm ra hướng đi rõ ràng",
         description:
-          "Bắt đầu với workshop khám phá nhanh để xác định mục tiêu, đối tượng và chỉ số thành công. Insight nghiên cứu được chắt lọc thành bản brief chung.",
-        highlights: ["Đánh giá sản phẩm & thương hiệu", "Lập bản đồ trải nghiệm", "Đo lường mục tiêu"],
+          "Mỗi dự án bắt đầu bằng các buổi khám phá tập trung để xác định mục tiêu, đối tượng và kết quả có thể đo lường. Những insight này được chuyển hóa thành định hướng sáng tạo chung mà tất cả cùng thống nhất.",
+        highlights: [
+          "Đánh giá sản phẩm & thương hiệu",
+          "Lập bản đồ trải nghiệm",
+          "Chỉ số thành công",
+        ],
       },
       {
-        title: "Thiết kế câu chuyện",
-        subtitle: "Prototype cảm xúc",
+        title: "Thiết kế Câu chuyện",
+        subtitle: "Định hình trải nghiệm",
         description:
-          "Prototype nhẹ thử nghiệm chuyển động, nhịp điệu và tông giọng. Cùng nhau chốt mạch chuyện, định hướng hình ảnh và hướng triển khai kỹ thuật trước khi sản xuất.",
-        highlights: ["Moodboard & tone board", "Prototype tương tác", "Ngôn ngữ chuyển động"],
+          "Thông qua các nguyên mẫu nhanh, tôi khám phá chuyển động, nhịp điệu và cảm xúc để đưa ý tưởng thành hiện thực. Cùng nhau, chúng ta tinh chỉnh nhịp kể chuyện, hướng nghệ thuật và kế hoạch kỹ thuật trước khi sản xuất.",
+        highlights: [
+          "Moodboard & phong cách trực quan",
+          "Nguyên mẫu tương tác",
+          "Hệ thống chuyển động",
+        ],
       },
       {
-        title: "Xây dựng & tinh chỉnh",
-        subtitle: "Tự tin bàn giao",
+        title: "Xây dựng & Hoàn thiện",
+        subtitle: "Ra mắt với sự tự tin",
         description:
-          "Bản build fidelity cao kết hợp WebGL, layout responsive và hàng rào hiệu năng. Vòng lặp review async tiếp tục cho đến khi trải nghiệm sẵn sàng ra mắt.",
-        highlights: ["Xây dựng theo component", "Dashboard hiệu năng", "Quy trình bàn giao kiểm thử"],
+          "Tôi phát triển các bản dựng chi tiết kết hợp WebGL, bố cục responsive và chuẩn hiệu năng cao. Các vòng phản hồi và đánh giá không đồng bộ giúp đảm bảo trải nghiệm cuối cùng mượt mà và sẵn sàng ra mắt.",
+        highlights: [
+          "Phát triển dựa trên component",
+          "Theo dõi hiệu năng",
+          "Bàn giao liền mạch",
+        ],
       },
     ],
   },
@@ -77,9 +99,14 @@ export default function Process() {
 
       <div className="process__timeline">
         {copy.steps.map((step, index) => (
-          <article key={step.title} className="process__step glass-panel glass-panel--tight">
+          <article
+            key={step.title}
+            className="process__step glass-panel glass-panel--tight"
+          >
             <div className="process__marker">
-              <span className="process__index">{String(index + 1).padStart(2, "0")}</span>
+              <span className="process__index">
+                {String(index + 1).padStart(2, "0")}
+              </span>
               <span className="process__pulse" />
             </div>
 

@@ -10,33 +10,33 @@ const metrics = [
   { label: "Client satisfaction", value: "97%" },
 ];
 
-const trustedBy = ["Linear", "Webflow", "Shopify", "Airtable", "Dropbox"];
+const trustedBy: string[] = [];
 
 const HERO_CONTENT = {
   en: {
     availability: "Available for freelance collaborations",
     headline: ["Crafting 3D-powered", "digital product stories"],
     description:
-      "I blend performant frontend engineering with cinematic motion to help modern brands stand out, tell better stories, and convert curious visitors into loyal fans.",
+      "I blend performance frontend engineering with cinematic motion to help ambitious founders stand out, tell better stories, and convert curious visitors into loyal fans.",
     primaryCta: "View projects",
     secondaryCta: "Start a project",
     metrics,
-    trustedLabel: "Trusted by teams at",
+    trustedLabel: "Trusted by",
     scroll: "Scroll to explore",
   },
   vi: {
-    availability: "Sẵn sàng cho các dự án hợp tác tự do",
+    availability: "Sẵn sàng cho các dự án cá nhân",
     headline: ["Kiến tạo trải nghiệm 3D", "kể câu chuyện sản phẩm số"],
     description:
-      "Tôi kết hợp kỹ sư frontend hiệu năng với chuyển động điện ảnh để giúp thương hiệu nổi bật, kể chuyện hấp dẫn và biến người ghé thăm thành người ủng hộ trung thành.",
+      "Tôi kết hợp kỹ sư frontend hiệu năng với chuyển động điện ảnh để giúp các nhà sáng lập nổi bật, kể chuyện hấp dẫn và biến người ghé thăm thành người ủng hộ trung thành.",
     primaryCta: "Xem dự án",
     secondaryCta: "Bắt đầu dự án",
     metrics: [
-      { label: "Năm xây dựng giao diện", value: "5+" },
-      { label: "Dự án dẫn dắt trọn vẹn", value: "28" },
+      { label: "Năm xây dựng giao diện", value: "4+" },
+      { label: "Dự án dẫn dắt trọn vẹn", value: "11" },
       { label: "Mức hài lòng khách hàng", value: "97%" },
     ],
-    trustedLabel: "Được tin tưởng bởi",
+    trustedLabel: "Được tin dùng bởi",
     scroll: "Cuộn để khám phá",
   },
 } as const;
@@ -88,9 +88,7 @@ export default function Hero() {
           <span className="line hero__title-gradient">{copy.headline[1]}</span>
         </h1>
 
-        <p className="hero__description sub-line">
-          {copy.description}
-        </p>
+        <p className="hero__description sub-line">{copy.description}</p>
 
         <div className="hero__actions sub-line">
           <a href="#projects" className="button button--primary">
@@ -114,16 +112,19 @@ export default function Hero() {
         </div>
 
         <div className="hero__footer">
-          <div className="hero__trusted">
+          {/* <div className="hero__trusted">
             <span className="hero__trusted-label">{copy.trustedLabel}</span>
-            <ul className="hero__trusted-list" aria-label="Clients and partners">
+            <ul
+              className="hero__trusted-list"
+              aria-label="Clients and partners"
+            >
               {trustedBy.map((brand) => (
                 <li key={brand} className="hero__trusted-item">
                   <span>{brand}</span>
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           <div className="hero__scroll">
             <span className="hero__scroll-dot" />

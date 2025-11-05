@@ -7,7 +7,6 @@ const NAV_ITEMS = [
   { id: "about", href: "#about" },
   { id: "skills", href: "#skills" },
   { id: "process", href: "#process" },
-  { id: "projects", href: "#projects" },
   { id: "contact", href: "#contact" },
 ] as const;
 
@@ -17,7 +16,7 @@ const NAV_CONTENT = {
       about: "About",
       skills: "Skills",
       process: "Process",
-      projects: "Projects",
+      // projects: "Projects",
       contact: "Contact",
     },
     resume: "View résumé",
@@ -30,7 +29,7 @@ const NAV_CONTENT = {
       about: "Giới thiệu",
       skills: "Kỹ năng",
       process: "Quy trình",
-      projects: "Dự án",
+      // projects: "Dự án",
       contact: "Liên hệ",
     },
     resume: "Xem CV",
@@ -122,7 +121,10 @@ export default function Navbar() {
           >
             {navContent.resume}
           </a>
-          <a href="mailto:hello@koumastudio.com" className="button button--primary navbar__cta">
+          <a
+            href="mailto:hello@koumastudio.com"
+            className="button button--primary navbar__cta"
+          >
             {navContent.cta}
           </a>
         </div>
@@ -138,7 +140,9 @@ export default function Navbar() {
 
         <button
           type="button"
-          className={`navbar__toggle ${isMenuOpen ? "navbar__toggle--open" : ""}`}
+          className={`navbar__toggle ${
+            isMenuOpen ? "navbar__toggle--open" : ""
+          }`}
           aria-expanded={isMenuOpen}
           aria-controls="navbar-drawer"
           onClick={() => setIsMenuOpen((open) => !open)}

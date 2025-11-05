@@ -80,7 +80,7 @@ export default function App() {
             <About />
             <Skills />
             <Process />
-            <Projects />
+            {/* <Projects /> */}
             <Contact />
           </div>
         </main>

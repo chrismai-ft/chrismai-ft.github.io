@@ -6,18 +6,17 @@ const ABOUT_CONTENT = {
   en: {
     eyebrow: "/ About me",
     title: "Shipping work that feels as good as it looks",
-    lead:
-      "I help product teams transform ambitious ideas into elegant, measurable web experiences. From rapid discovery to polished production builds, I bridge design and engineering to deliver outcomes that last.",
+    lead: "I help founders turn ambitious ideas into elegant, high-impact web experiences—bridging design and engineering from discovery to launch.",
     pillars: [
       {
         title: "Design systems",
         description:
-          "Translating brand DNA into scalable component libraries with accessibility baked in from the start.",
+          "Building reusable, accessible components that reflect your brand.",
       },
       {
         title: "Motion craft",
         description:
-          "Pairing GSAP and WebGL storytelling to choreograph purposeful, high-impact interactions.",
+          "Using GSAP and WebGL to create smooth, eye-catching website animations that tell your brand’s story in an engaging way.",
       },
       {
         title: "Performance",
@@ -27,17 +26,17 @@ const ABOUT_CONTENT = {
       {
         title: "Partnership",
         description:
-          "Fostering product rituals, async communication, and aligned roadmaps with cross-functional teams.",
+          "Fostering purposeful rituals, async communication, and aligned roadmaps with close collaborators.",
       },
     ],
     currentlyLabel: "Currently",
     currentlyText:
-      "Partnering with remote-first product squads across the EU and APAC time zones.",
+      "Collaborating remotely with creators across the EU and APAC time zones.",
     highlightsLabel: "Highlights",
     highlights: [
-      "Led the rebuild of an e-commerce platform that improved conversion by 24%.",
-      "Delivered an award-winning 3D experience featured on Awwwards & CSSDA.",
-      "Coached design and engineering teams on design system adoption and motion storytelling.",
+      "Engineered a lightning-fast WebGL experience that boosted average session time by 2.5x.",
+      "Developed a plug-and-play animation library reused across multiple client sites.",
+      "Optimized motion performance to achieve 60fps across all devices.",
     ],
     availabilityLabel: "Next availability",
     availabilityText: "May 2025 — accepting short-term partnerships.",
@@ -45,38 +44,37 @@ const ABOUT_CONTENT = {
   vi: {
     eyebrow: "/ Giới thiệu",
     title: "Bàn giao sản phẩm vừa đẹp mắt vừa hiệu quả",
-    lead:
-      "Tôi giúp các đội sản phẩm biến ý tưởng táo bạo thành trải nghiệm web tinh gọn, đo lường được. Từ giai đoạn khám phá nhanh đến triển khai hoàn thiện, tôi kết nối thiết kế và kỹ thuật để tạo ra giá trị bền vững.",
+    lead: "Tôi giúp các nhà sáng lập biến ý tưởng táo bạo thành trải nghiệm web tinh tế và hiệu quả — kết nối giữa thiết kế và kỹ thuật từ giai đoạn khám phá đến khi ra mắt.",
     pillars: [
       {
         title: "Hệ thống thiết kế",
         description:
-          "Chuyển ADN thương hiệu thành thư viện thành phần mở rộng, tích hợp khả năng truy cập ngay từ đầu.",
+          "Xây dựng các thành phần có thể tái sử dụng, dễ truy cập và phản ánh đúng bản sắc thương hiệu của bạn.",
       },
       {
-        title: "Chuyển động & kể chuyện",
+        title: "Nghệ thuật chuyển động",
         description:
-          "Kết hợp GSAP và WebGL để dàn dựng chuyển động có chủ đích, tạo nên trải nghiệm giàu cảm xúc.",
+          "Sử dụng GSAP và WebGL để tạo ra các hiệu ứng mượt mà, bắt mắt, kể câu chuyện thương hiệu một cách sinh động.",
       },
       {
-        title: "Hiệu năng",
+        title: "Hiệu suất",
         description:
-          "Tối ưu chiến lược bundle, chất lượng mã và ngân sách runtime để sản phẩm luôn mượt mà.",
+          "Tối ưu chiến lược gói, chất lượng mã và ngân sách runtime để mang lại trải nghiệm nhanh chóng, ổn định.",
       },
       {
-        title: "Đối tác",
+        title: "Hợp tác",
         description:
-          "Xây dựng nhịp làm việc chung, giao tiếp async và lộ trình thống nhất với các nhóm đa chức năng.",
+          "Xây dựng quy trình làm việc hiệu quả, giao tiếp linh hoạt và lộ trình thống nhất cùng các cộng sự.",
       },
     ],
     currentlyLabel: "Hiện tại",
     currentlyText:
-      "Hợp tác với các đội sản phẩm remote-first tại EU và APAC.",
+      "Hợp tác từ xa với nhà sáng lập và nhà sáng tạo tại EU và APAC.",
     highlightsLabel: "Điểm nhấn",
     highlights: [
-      "Dẫn dắt tái xây dựng nền tảng e-commerce, tăng chuyển đổi 24%.",
-      "Triển khai trải nghiệm 3D đoạt giải, được vinh danh trên Awwwards & CSSDA.",
-      "Huấn luyện đội ngũ về hệ thống thiết kế và storytelling bằng chuyển động.",
+      "Phát triển trải nghiệm WebGL tốc độ cao giúp tăng thời gian phiên trung bình lên gấp 2,5 lần.",
+      "Xây dựng thư viện hoạt ảnh plug-and-play được tái sử dụng trên nhiều trang web của khách hàng.",
+      "Tối ưu hiệu suất chuyển động để đạt 60 khung hình/giây trên mọi thiết bị.",
     ],
     availabilityLabel: "Thời gian trống tiếp theo",
     availabilityText: "Tháng 5/2025 — nhận hợp tác ngắn hạn.",
@@ -99,7 +97,10 @@ export default function About() {
 
           <div className="about__pillars grid grid--two">
             {copy.pillars.map((pillar) => (
-              <div key={pillar.title} className="about__pillar glass-panel glass-panel--tight">
+              <div
+                key={pillar.title}
+                className="about__pillar glass-panel glass-panel--tight"
+              >
                 <p className="about__pillar-title">{pillar.title}</p>
                 <p className="about__pillar-copy">{pillar.description}</p>
               </div>
