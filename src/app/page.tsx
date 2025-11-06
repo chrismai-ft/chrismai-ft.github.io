@@ -13,7 +13,6 @@ import Skills from "./components/Skills";
 import Process from "./components/Process";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import LanguageProvider from "./components/LanguageProvider";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -64,27 +63,25 @@ export default function App() {
   }, []);
 
   return (
-    <LanguageProvider>
-      <div ref={containerRef} className="portfolio">
-        <div className="portfolio__background">
-          <ThreeBackground />
-          <div className="portfolio__overlay portfolio__overlay--gradient" />
-          <div className="portfolio__overlay portfolio__overlay--noise" />
-        </div>
-
-        <Navbar />
-
-        <main className="portfolio__main">
-          <Hero />
-          <div className="portfolio__sections">
-            <About />
-            <Skills />
-            <Process />
-            {/* <Projects /> */}
-            <Contact />
-          </div>
-        </main>
+    <div ref={containerRef} className="portfolio">
+      <div className="portfolio__background">
+        <ThreeBackground />
+        <div className="portfolio__overlay portfolio__overlay--gradient" />
+        <div className="portfolio__overlay portfolio__overlay--noise" />
       </div>
-    </LanguageProvider>
+
+      <Navbar />
+
+      <main className="portfolio__main">
+        <Hero />
+        <div className="portfolio__sections">
+          <About />
+          <Skills />
+          <Process />
+          {/* <Projects /> */}
+          <Contact />
+        </div>
+      </main>
+    </div>
   );
 }

@@ -10,14 +10,24 @@ const NAV_ITEMS = [
   { id: "contact", href: "#contact" },
 ] as const;
 
+const SECONDARY_LINKS = [
+  { id: "playground", href: "/playground" },
+  { id: "showcase", href: "/showcase" },
+  { id: "crypto", href: "/crypto" },
+] as const;
+
 const NAV_CONTENT = {
   en: {
     links: {
       about: "About",
       skills: "Skills",
       process: "Process",
-      // projects: "Projects",
       contact: "Contact",
+    },
+    secondary: {
+      playground: "Playground",
+      showcase: "Showcase",
+      crypto: "Crypto Stream",
     },
     resume: "View résumé",
     cta: "Let's talk",
@@ -29,8 +39,12 @@ const NAV_CONTENT = {
       about: "Giới thiệu",
       skills: "Kỹ năng",
       process: "Quy trình",
-      // projects: "Dự án",
       contact: "Liên hệ",
+    },
+    secondary: {
+      playground: "Playground",
+      showcase: "Showcase",
+      crypto: "Crypto Stream",
     },
     resume: "Xem CV",
     cta: "Kết nối",
@@ -100,6 +114,11 @@ export default function Navbar() {
           {NAV_ITEMS.map((link) => (
             <a key={link.id} href={link.href} className="navbar__link">
               {navContent.links[link.id]}
+            </a>
+          ))}
+          {SECONDARY_LINKS.map((link) => (
+            <a key={link.id} href={link.href} className="navbar__link navbar__link--secondary">
+              {navContent.secondary[link.id]}
             </a>
           ))}
         </div>
@@ -174,6 +193,16 @@ export default function Navbar() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 {navContent.links[link.id]}
+              </a>
+            ))}
+            {SECONDARY_LINKS.map((link) => (
+              <a
+                key={link.id}
+                href={link.href}
+                className="navbar__drawer-link"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {navContent.secondary[link.id]}
               </a>
             ))}
           </div>
